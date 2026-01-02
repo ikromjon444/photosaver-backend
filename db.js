@@ -24,6 +24,7 @@ async function initDB() {
         id SERIAL PRIMARY KEY,
         user_id INT REFERENCES users(id) ON DELETE CASCADE,
         filename TEXT NOT NULL,
+        original_name TEXT, -- yangi ustun qo'shildi
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
