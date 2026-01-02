@@ -9,7 +9,7 @@ const app = express();
 
 /* CORS */
 app.use(cors({
-  origin: "*", 
+  origin: "https://save-photo.vercel.app", 
   methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"], // DELETE qo‘shildi
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
